@@ -69,13 +69,16 @@ I recently completed a comprehensive local setup and environment configuration f
 ### 📈 Activity & Trophies
 
 <div align="center">
-  [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=sujanyd&theme=tokyo-night&hide_border=true&bg_color=0a0a0f&color=6366f1&line=a855f7&point=ec4899&area=true&area_color=6366f1)]
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=sujanyd&theme=tokyo-night&hide_border=true&bg_color=0a0a0f&color=6366f1&line=a855f7&point=ec4899&area=true&area_color=6366f1" />
+
 </div>
 
 <div align="center">
-  [![trophy](https://github-profile-trophy.vercel.app/?username=sujanyd&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&column=6)]
-</div>
 
+<img src="https://github-profile-trophy.vercel.app/?username=sujanyd&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&column=6" />
+
+</div>
 ---
 
 ### 🐍 Contribution Journey
