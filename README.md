@@ -96,6 +96,13 @@ I recently completed a comprehensive local setup and environment configuration f
     <img src="https://img.shields.io/badge/GitHub-171515?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </div>
+### 🐍 Contribution Snake
+
+<div align="center">
+
+![Snake animation](https://raw.githubusercontent.com/sujanyd/sujanyd/output/snake-dark.svg)
+
+</div>
 
 <div align="center">
   <br>
