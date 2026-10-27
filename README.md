@@ -1,108 +1,75 @@
-<div align="center">
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&weight=700&pause=1000&color=6366F1&center=true&vCenter=true&width=600&lines=Hey+there!+%F0%9F%91%8B+I'm+Sujan+Y+D;Python+%26+Open+Source+Developer%E2%9A%99%EF%B8%8F;Currently+hacking+on+OBS+%E2%9A%99%EF%B8%8F;Always+learning%2C+always+building+%F0%9F%9A%80)](https://git.io/typing-svg)
-
-</div>
-
----
-
-### 🖥️ `About Me`
-
-```json
-{
-  "name"      : "Sujan Y D",
-  "role"      : "Python & Open Source Developer",
-  "location"  : "India",
-  "currently" : "Contributing to Open Build Service (OBS)",
-  "interests" : ["Game Dev", "System Architecture", "Open Source"],
-  "mission"   : "Building robust infrastructure for the open-source community"
-}
-```
-
----
-
-### 🚀 Featured Project: **Open Build Service (OBS)**
-I recently completed a comprehensive local setup and environment configuration for **OBS**. 
-- 🐳 **Docker-based** development environment.
-- 📦 **Case-sensitive** macOS filesystem workaround via Disk Images.
-- 🛠️ **Full Stack**: Backend (Perl), Frontend (Rails), MariaDB, Memcached.
-
-> [Check out my contribution work on OBS!](https://github.com/sujanyd/open-build-service)
-
----
-
-### 🛠️ Tech Stack & Tools
+<!--
+  Arcade edition. Every graphic in /assets is a hand-built SVG.
+  The fx-*.svg charts are rebuilt daily by scripts/build_charts.py via .github/workflows/charts.yml.
+-->
 
 <div align="center">
 
-**Languages & Frameworks**
-<br>
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Ruby on Rails](https://img.shields.io/badge/Rails-CC0000?style=for-the-badge&logo=ruby-on-rails&logoColor=white)
-![Pygame](https://img.shields.io/badge/Pygame-000000?style=for-the-badge&logo=python&logoColor=white)
+<img src="assets/hero.svg" width="100%" alt="Sujan Y D — Player 1. AI agents, LLMs, voice assistants and web." />
 
-**Infrastructure & DevOps**
-<br>
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-171515?style=for-the-badge&logo=github&logoColor=white)
+<br/><br/>
+<img src="assets/lvl1.svg" width="100%" alt="LVL 01 Fidgets" />
+<img src="assets/fx-counters.svg" width="100%" alt="Odometer counters: total contributions, active days, longest streak, best day" />
+<img src="assets/fx-city.svg" width="100%" alt="Contribution city: one building per day, height equals contributions" />
+<img src="assets/fx-spinner.svg" width="49%" alt="Fidget spinner of repo languages" />
+<img src="assets/fx-equalizer.svg" width="49%" alt="LED equalizer of contributions per month" />
+<img src="assets/fx-radar.svg" width="49%" alt="Radar of contributions by weekday" />
+<img src="assets/fx-ring.svg" width="49%" alt="Year ring: every day of the last year in one loop" />
 
-</div>
+<br/><br/>
 
----
+<img src="assets/lvl2.svg" width="100%" alt="LVL 02 Player" />
+<img src="assets/player.svg" width="100%" alt="Character sheet: Sujan Y D, AI builder, Newton School of Technology, research intern at IIT Guwahati" />
 
-### 📊 Performance Metrics
+<br/><br/>
 
-<div align="center">
-  <img height="180px" src="https://github-readme-stats.vercel.app/api?username=sujanyd&show_icons=true&count_private=true&include_all_commits=true&theme=tokyonight&hide_border=true&bg_color=0a0a0f&title_color=6366f1&icon_color=a855f7&text_color=94a3b8" />
-  <img height="180px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sujanyd&layout=compact&theme=tokyonight&hide_border=true&bg_color=0a0a0f&title_color=6366f1&text_color=94a3b8&langs_count=6" />
-</div>
+<img src="assets/lvl3.svg" width="100%" alt="LVL 03 Quests" />
+<a href="https://github.com/sujanyd/jarvis"><img src="assets/quest-jarvis.svg" width="49%" alt="J.A.R.V.I.S" /></a>
+<a href="https://github.com/sujanyd/chatgpt-clone"><img src="assets/quest-chatgpt.svg" width="49%" alt="Offline ChatGPT" /></a>
+<a href="https://github.com/sujanyd/My-Project-Hub"><img src="assets/quest-hub.svg" width="49%" alt="My Project Hub" /></a>
+<img src="assets/quest-iit.svg" width="49%" alt="Research Intern at IIT Guwahati" />
 
-<div align="center">
-  <br>
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=sujanyd&theme=tokyonight&hide_border=true&background=0a0a0f&stroke=6366f1&ring=a855f7&fire=ec4899&currStreakNum=e2e2e2&sideNums=e2e2e2&currStreakLabel=6366f1&sideLabels=475569&dates=334155" alt="GitHub Streak" />
-</div>
+<sub>
+play live: <a href="https://chatgpt-clone-two-bice.vercel.app/">chatgpt-clone</a> &nbsp;·&nbsp;
+<a href="https://my-project-hub-two.vercel.app/">my-project-hub</a>
+</sub>
 
----
+<br/><br/>
 
-### 📈 Activity & Trophies
+<img src="assets/lvl4.svg" width="100%" alt="LVL 04 Inventory" />
 
-<div align="center">
+<img src="https://skillicons.dev/icons?i=python,js,html,css,react,nodejs,qt,postgres,sqlite,docker,git,linux&theme=dark&perline=12" alt="Python, JavaScript, HTML, CSS, React, Node.js, Qt, PostgreSQL, SQLite, Docker, Git, Linux" />
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=sujanyd&theme=tokyo-night&hide_border=true&bg_color=0a0a0f&color=6366f1&line=a855f7&point=ec4899&area=true&area_color=6366f1" />
+<img src="https://img.shields.io/badge/gemini_api-0a0c10?style=for-the-badge&logo=googlegemini&logoColor=a371f7" />
+<img src="https://img.shields.io/badge/openai_api-0a0c10?style=for-the-badge" />
+<img src="https://img.shields.io/badge/openrouter-0a0c10?style=for-the-badge&logo=openrouter&logoColor=79c0ff" />
+<img src="https://img.shields.io/badge/ollama-0a0c10?style=for-the-badge&logo=ollama&logoColor=7ee787" />
+<img src="https://img.shields.io/badge/n8n-0a0c10?style=for-the-badge&logo=n8n&logoColor=ff7b72" />
 
-</div>
+<br/><br/>
 
-<div align="center">
+<img src="assets/lvl5.svg" width="100%" alt="LVL 05 Stats" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sujanyd&theme=tokyonight" width="100%" alt="Contributions over the last year" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=sujanyd&theme=tokyonight&utcOffset=5.5" width="49%" alt="Commits by hour of day" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sujanyd&theme=tokyonight" width="49%" alt="Repos per language" />
+<img src="https://streak-stats.demolab.com?user=sujanyd&hide_border=true&background=0D1117&ring=A371F7&fire=FF7B72&currStreakLabel=A371F7&sideLabels=8B949E&dates=8B949E&sideNums=E6EDF3&currStreakNum=E6EDF3&stroke=30363D" width="100%" alt="Contribution streak" />
 
-<img src="https://github-profile-trophy.vercel.app/?username=sujanyd&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&column=6" />
+<br/><br/>
 
-</div>
----
+<img src="assets/lvl6.svg" width="100%" alt="LVL 06 Boss fight" />
+<img src="assets/boss.svg" width="100%" alt="Space Invaders: a pixel ship shoots down Sujan's tech stack" />
 
-### 🐍 Contribution Journey
+<br/><br/>
 
-<div align="center">
+<img src="assets/lvl7.svg" width="100%" alt="LVL 07 Snake" />
+<img src="assets/fx-snake.svg" width="100%" alt="Neon snake eating Sujan's real contribution graph" />
 
-![Snake animation](https://raw.githubusercontent.com/sujanyd/sujanyd/output/snake-dark.svg)
+<br/><br/>
 
-</div>
+<img src="assets/continue.svg" width="100%" alt="Continue? Insert coin to collab" />
 
----
+<a href="https://www.linkedin.com/in/sujan-y-d-6322a437b"><img src="https://img.shields.io/badge/linkedin-0a0c10?style=for-the-badge&logo=linkedin&logoColor=79c0ff" /></a>
+<a href="mailto:ydsujan@gmail.com"><img src="https://img.shields.io/badge/email-0a0c10?style=for-the-badge&logo=gmail&logoColor=ff7b72" /></a>
+<a href="https://github.com/sujanyd"><img src="https://img.shields.io/badge/github-0a0c10?style=for-the-badge&logo=github&logoColor=7ee787" /></a>
 
-### 🔗 Let's Connect!
-
-<div align="center">
-  <a href="https://www.linkedin.com/in/sujan-y-d-6322a437b/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="https://github.com/sujanyd">
-    <img src="https://img.shields.io/badge/GitHub-171515?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-</div>
-
-<div align="center">
-  <br>
-  ![Views](https://komarev.com/ghpvc/?username=sujanyd&color=6366f1&style=flat-square&label=PROFILE+VIEWS)
 </div>
