@@ -30,12 +30,13 @@ def svg(w, h, body):
 # 1. Level banners
 def make_lvl(num, title, color):
     w, h = 900, 48
+    escaped_title = title.upper().replace("&", "&amp;")
     body = (
         f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="8" fill="{PANEL}" stroke="{BORDER}" stroke-width="1.5"/>'
         f'<path d="M1 1h8v{h-2}H1Z" fill="{color}"/>'
         f'<text x="24" y="29" font-size="13" font-weight="800" letter-spacing="3" fill="{color}">LVL {num:02d}</text>'
         f'<text x="105" y="29" font-size="13" font-weight="700" letter-spacing="2" fill="{MUTED}">//</text>'
-        f'<text x="135" y="29" font-size="13" font-weight="700" letter-spacing="2" fill="{TEXT}">{title.upper()}</text>'
+        f'<text x="135" y="29" font-size="13" font-weight="700" letter-spacing="2" fill="{TEXT}">{escaped_title}</text>'
         f'<line x1="420" y1="24" x2="840" y2="24" stroke="{BORDER}" stroke-dasharray="4 6"/>'
         f'<circle cx="865" cy="24" r="4" fill="{color}"><animate attributeName="opacity" values="1;0.2;1" dur="1.5s" repeatCount="indefinite"/></circle>'
     )
@@ -85,10 +86,10 @@ def make_player():
         
         # Rows
         f'<text x="248" y="80" font-size="11" letter-spacing="1" fill="{MUTED}">CLASS</text>'
-        f'<text x="350" y="80" font-size="12" font-weight="700" fill="{TEXT}">Autonomous AI Agent & Systems Builder</text>'
+        f'<text x="350" y="80" font-size="12" font-weight="700" fill="{TEXT}">Autonomous AI Agent &amp; Systems Builder</text>'
         
         f'<text x="248" y="112" font-size="11" letter-spacing="1" fill="{MUTED}">ACADEMY</text>'
-        f'<text x="350" y="112" font-size="12" font-weight="700" fill="{CYAN}">Newton School of Technology (B.Tech CSE & AI)</text>'
+        f'<text x="350" y="112" font-size="12" font-weight="700" fill="{CYAN}">Newton School of Technology (B.Tech CSE &amp; AI)</text>'
         
         f'<text x="248" y="144" font-size="11" letter-spacing="1" fill="{MUTED}">EXP / GUILD</text>'
         f'<text x="350" y="144" font-size="12" font-weight="700" fill="{AMBER}">Research Intern @ IIT Guwahati</text>'
@@ -111,14 +112,18 @@ def make_player():
 # 4. Quest Cards
 def make_quest(title, sub, stack, status, stat_col, icon):
     w, h = 440, 200
-    fr = frame(w, h, f"~/quests/{title.lower().replace(' ', '_')}.exe", "QUEST LOG", stat_col)
+    clean_title_fn = title.lower().replace(' ', '_').replace('.', '_')
+    fr = frame(w, h, f"~/quests/{clean_title_fn}.exe", "QUEST LOG", stat_col)
+    escaped_title = title.replace("&", "&amp;")
+    escaped_sub = sub.replace("&", "&amp;")
+    escaped_stack = stack.replace("&", "&amp;")
     content = (
         f'<circle cx="48" cy="74" r="22" fill="{PANEL}" stroke="{stat_col}" stroke-width="2"/>'
         f'<text x="48" y="82" text-anchor="middle" font-size="20">{icon}</text>'
-        f'<text x="82" y="70" font-size="14" font-weight="800" fill="{TEXT}">{title}</text>'
-        f'<text x="82" y="88" font-size="11" fill="{MUTED}">{sub}</text>'
+        f'<text x="82" y="70" font-size="14" font-weight="800" fill="{TEXT}">{escaped_title}</text>'
+        f'<text x="82" y="88" font-size="11" fill="{MUTED}">{escaped_sub}</text>'
         f'<rect x="24" y="112" width="392" height="42" rx="6" fill="{PANEL}" stroke="{BORDER}"/>'
-        f'<text x="36" y="136" font-size="11" fill="{TEXT}"><tspan fill="{MUTED}">STACK:</tspan> {stack}</text>'
+        f'<text x="36" y="136" font-size="11" fill="{TEXT}"><tspan fill="{MUTED}">STACK:</tspan> {escaped_stack}</text>'
         f'<rect x="24" y="164" width="110" height="22" rx="4" fill="{SCREEN}" stroke="{stat_col}"/>'
         f'<text x="79" y="179" text-anchor="middle" font-size="9.5" font-weight="800" fill="{stat_col}">● {status}</text>'
     )
@@ -153,7 +158,7 @@ def make_boss():
     
     hud = (
         f'<text x="36" y="244" font-size="11" letter-spacing="2" fill="{MUTED}">PLAYER 1 SHIELD: <tspan fill="{GREEN}">100%</tspan></text>'
-        f'<text x="900 - 36" y="244" text-anchor="end" font-size="11" letter-spacing="2" fill="{MUTED}">BOSS HP: <tspan fill="{PINK}">0% (DEFEATED)</tspan></text>'
+        f'<text x="864" y="244" text-anchor="end" font-size="11" letter-spacing="2" fill="{MUTED}">BOSS HP: <tspan fill="{PINK}">0% (DEFEATED)</tspan></text>'
     )
     
     return svg(w, h, fr + "".join(invaders) + lasers + hud)
@@ -172,7 +177,8 @@ def make_continue():
     return svg(w, h, fr + content)
 
 def main():
-    out_dir = "/Users/sujanyd/sujanyd/assets"
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    out_dir = os.path.join(base_dir, "assets")
     os.makedirs(out_dir, exist_ok=True)
     
     # Levels
@@ -186,13 +192,13 @@ def main():
         ("lvl7.svg", make_lvl(7, "Neon Snake Arena", GREEN)),
     ]
     for fn, content in lvls:
-        with open(os.path.join(out_dir, fn), "w") as f:
+        with open(os.path.join(out_dir, fn), "w", encoding="utf-8") as f:
             f.write(content)
             
     # Hero & Player
-    with open(os.path.join(out_dir, "hero.svg"), "w") as f:
+    with open(os.path.join(out_dir, "hero.svg"), "w", encoding="utf-8") as f:
         f.write(make_hero())
-    with open(os.path.join(out_dir, "player.svg"), "w") as f:
+    with open(os.path.join(out_dir, "player.svg"), "w", encoding="utf-8") as f:
         f.write(make_player())
         
     # Quests
@@ -203,13 +209,13 @@ def main():
         ("quest-iit.svg", make_quest("Research Intern @ IIT", "IIT Guwahati Deep Learning Research", "Python · Graph Neural Nets · PyTorch", "RESEARCH", AMBER, "🏛️")),
     ]
     for fn, content in quests:
-        with open(os.path.join(out_dir, fn), "w") as f:
+        with open(os.path.join(out_dir, fn), "w", encoding="utf-8") as f:
             f.write(content)
             
     # Boss & Continue
-    with open(os.path.join(out_dir, "boss.svg"), "w") as f:
+    with open(os.path.join(out_dir, "boss.svg"), "w", encoding="utf-8") as f:
         f.write(make_boss())
-    with open(os.path.join(out_dir, "continue.svg"), "w") as f:
+    with open(os.path.join(out_dir, "continue.svg"), "w", encoding="utf-8") as f:
         f.write(make_continue())
 
     print("All arcade SVGs generated successfully in", out_dir)
